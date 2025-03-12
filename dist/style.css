@@ -66,6 +66,8 @@ body {
   /* 1 */
   line-height: inherit;
   /* 2 */
+  background-color: #ffffff; /* Example light background color */
+  color: #1a202c; /* Example light text color */
 }
 
 /*
@@ -1238,7 +1240,7 @@ video {
 
 .bg-zinc-900 {
   --tw-bg-opacity: 1;
-  background-color: rgb(24 24 27 / var(--tw-bg-opacity));
+  background-color: rgb(24 24 27 / var (--tw-bg-opacity));
 }
 
 .bg-zinc-100 {
@@ -1916,6 +1918,12 @@ video {
 :is(.dark .dark\:hover\:text-zinc-900:hover) {
   --tw-text-opacity: 1;
   color: rgb(24 24 27 / var(--tw-text-opacity));
+}
+
+/* Custom styles for light and dark mode toggle */
+body.dark {
+   background-color: #1a202c; /* Example dark background color */
+   color: #f7fafc; /* Example dark text color */
 }
 
 @media not all and (min-width: 768px) {
